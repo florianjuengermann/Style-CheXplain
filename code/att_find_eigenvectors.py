@@ -289,7 +289,8 @@ def write_prob(img_tensor, prob):
     # write probability on each image
     font_file = "ARIALUNI.ttf"
     fill_color = (0, 0, 255)  # blue
-    txt_font = ImageFont.truetype(font_file, 20)
+    #txt_font = ImageFont.truetype(font_file, 20)
+    txt_font = ImageFont.load_default()
 
     for i in range(img_tensor.shape[0]):
         # this is a hack
