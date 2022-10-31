@@ -501,6 +501,9 @@ if __name__ == "__main__":
     parser.add_argument(
         "--device", type=str, default="cuda", help="device to run the model"
     )
+    parser.add_argument(
+        "--size", type=int, default=256, help="resolution of the images"
+    )
 
     # eigenvecotrs
     parser.add_argument(

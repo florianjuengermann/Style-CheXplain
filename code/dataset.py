@@ -142,7 +142,7 @@ def get_dataset(args, return_labels=True):
 
     # dataset already filtered
     else:
-        dataset = MultiResolutionDataset(args.dataset_path, transform, args.batch, labels=return_labels)
+        dataset = MultiResolutionDataset(args.dataset_path, transform, args.size, labels=return_labels)
 
     return dataset
 
